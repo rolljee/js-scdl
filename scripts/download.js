@@ -54,11 +54,11 @@ function makeInstall() {
 						.then(() => {
 							console.info('scdl installed successfully');
 						})
-						.catch(console.error); //TODO: handle case where install didn't success
+						.catch(e => new Error(e)); //TODO: handle case where install didn't success
 				})
-				.catch(console.error); // TODO: handle case were destDir didn't created
+				.catch(e => new Error(e)); // TODO: handle case were destDir didn't created
 		})
-		.catch(console.error); // TODO: handle case where people don't have python3
+		.catch(e => new Error(e)); // TODO: handle case where people don't have python3
 }
 
 makeInstall();
