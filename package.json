@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint . --cache",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "node ./scripts/download.js"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
