@@ -1,6 +1,6 @@
 {
   "name": "js-scdl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JS Wrapper around scdl",
   "main": "index.js",
   "repository": {
