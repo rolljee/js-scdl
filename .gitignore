@@ -1,10 +1,19 @@
-.DS_Store
-npm-debug.log
-
-.cache/
-dist/
-build/
-node_modules/
-scripts/
-
 .eslintcache
+
+# Node
+*.log
+node_modules/
+
+# Other
+.DS_STORE
+*#
+*~
+
+# Typescript related files
+app.js
+app.d.ts
+app.js.map
+
+lib/**/*.d.ts
+lib/**/*.js.map
+lib/**/*.js

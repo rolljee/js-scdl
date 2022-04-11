@@ -1,18 +1,14 @@
-const cp = require('child_process');
-
-const Soundcloud = {
-	start(url = '', outputFolder = '') {
-		if (outputFolder.charAt(0) === '~') {
-			// path must be absolute for spawn to work.
-			throw new Error('You must use absolute path');
-		}
-
-		if (!url.includes('soundcloud')) {
-			throw new Error('Are you sure url come from soundcloud ?');
-		}
-
-		return cp.spawn('scdl', ['-l', url, '--path', `${outputFolder}`, '-c']);
-	},
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
-
-module.exports = Soundcloud;
+Object.defineProperty(exports, "__esModule", { value: true });
+__exportStar(require("./lib"), exports);
+//# sourceMappingURL=index.js.map

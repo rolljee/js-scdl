@@ -12,10 +12,7 @@
 		"security"
 	],
 	"extends": [
-		"airbnb",
-		"eslint:recommended",
-		"plugin:react/recommended",
-		"plugin:security/recommended"
+		"eslint:recommended"
 	],
 	"rules": {
 		"no-undef": "error",
