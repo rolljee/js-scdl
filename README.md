@@ -15,7 +15,10 @@ Great work by him.
 ## 📓 Usage
 
 ```js
-import Soundcloud from 'js-scdl/lin/Soundcloud';
+const scdl = require('js-scdl')
 
-// Then you can use it
+const Soundcloud = new scdl.SoundCloud();
+
+
+Soundcloud.download('https://soundcloud.com/velcroo/velcro-lightspeed-quantum', '/home/rolljee/Downloads')
 ```
